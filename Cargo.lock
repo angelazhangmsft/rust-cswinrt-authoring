@@ -168,6 +168,7 @@ name = "rust_authoring_sample"
 version = "0.1.0"
 dependencies = [
  "bindings",
+ "futures",
 ]
 
 [[package]]
