@@ -1,5 +1,5 @@
-use bindings::*;
 use bindings::authoring_demo::*;
+use bindings::*;
 use futures::executor::block_on;
 
 fn main() -> windows::Result<()> {
@@ -16,4 +16,4 @@ fn main() -> windows::Result<()> {
     println!("{}", files);
 
     Ok(())
-  }
+}
