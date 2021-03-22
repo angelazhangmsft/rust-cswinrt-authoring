@@ -6,8 +6,8 @@
         name="AuthoringDemo.Example"
         threadingModel="both"
         xmlns="urn:schemas-microsoft-com:winrt.v1" />
-    <activatableClass
-        name="AuthoringDemo.FolderEnumeration"
+	  <activatableClass
+        name="AuthoringDemo2.Example2"
         threadingModel="both"
         xmlns="urn:schemas-microsoft-com:winrt.v1" />
   </file>

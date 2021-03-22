@@ -1,3 +1,7 @@
 fn main() {
-    windows::build!(AuthoringDemo::*);
+    windows::build!(
+        AuthoringDemo::*,
+        AuthoringDemo2::*
+    );
+
 }

@@ -1,19 +1,16 @@
 use bindings::authoring_demo::*;
+use bindings::authoring_demo2::*;
 use bindings::*;
-use futures::executor::block_on;
 
 fn main() -> windows::Result<()> {
     let example = Example::new()?;
-    example.set_sample_property(42)?;
-    println!("{}", example.sample_property()?);
-    let hello = Example::say_hello()?.to_string();
-    println!("{}", hello);
+    //let example2 = Example2::new()?;
 
-    let folder_enumerator = FolderEnumeration::new()?;
-    let future = folder_enumerator.get_files_and_folders_async()?;
-    block_on(future)?;
-    let files = folder_enumerator.all_files()?.to_string();
-    println!("{}", files);
+    example.set_sample_property(42)?;
+    //example2.set_sample_property(50)?;
+
+    //println!("{}", example.sample_property()?);
+    // println!("{}", example2.sample_property()?);
 
     Ok(())
 }
